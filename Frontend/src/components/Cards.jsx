@@ -13,7 +13,9 @@ const Cards = () => {
   const foodData = async () => {
     try {
       setSpinner(true);
-      const res = await axios.post("http://localhost:8000/api/v1/fooditem");
+      const res = await axios.post(
+        "https://food-delivery-website-jo06.onrender.com/api/v1/fooditem"
+      );
       setFoods(res.data[0]);
       setCategory(res.data[1][0]);
       setSpinner(false);

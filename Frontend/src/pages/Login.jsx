@@ -13,10 +13,13 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:8000/api/v1/login", {
-        email,
-        password,
-      });
+      const res = await axios.post(
+        "https://food-delivery-website-jo06.onrender.com/api/v1/login",
+        {
+          email,
+          password,
+        }
+      );
 
       if (res.status === 200) {
         alert("login success");

@@ -18,13 +18,16 @@ const Signup = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:8000/api/v1/register", {
-        username,
-        email,
-        location,
-        phone,
-        password,
-      });
+      const res = await axios.post(
+        "https://food-delivery-website-jo06.onrender.com/api/v1/register",
+        {
+          username,
+          email,
+          location,
+          phone,
+          password,
+        }
+      );
       setEmail("");
       setPassword("");
       setPhone("");
