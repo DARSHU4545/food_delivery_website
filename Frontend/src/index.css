@@ -1,0 +1,41 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body,
+html {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+  color-scheme: light dark;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#signup-bg-image {
+  background-image: url("https://images.unsplash.com/photo-1511909525232-61113c912358?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* #signup-blur {
+
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(246, 246, 246, 0.236);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+} */
+#login-bg-image {
+  background-image: url("https://images.unsplash.com/photo-1511909525232-61113c912358?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
